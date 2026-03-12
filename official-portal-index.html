@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Briyant Soley Signo 1815 | Official Portal</title>
+  <meta name="description" content="Official portal for Briyant Soley Signo 1815, Team San Presyon, Miami an Aksyon, and Super Fanclub 5 Stars." />
+  <style>
+    :root {
+      --orange: #f4a460;
+      --orange-2: #ffba73;
+      --orange-3: #ffd3a4;
+      --black: #060606;
+      --panel: rgba(255,255,255,0.06);
+      --panel-2: rgba(255,255,255,0.04);
+      --border: rgba(255,255,255,0.12);
+      --text: #fff8f1;
+      --muted: #dcc6b2;
+      --shadow: 0 20px 44px rgba(0,0,0,0.34);
+      --radius: 24px;
+      --max: 1220px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top, rgba(244,164,96,0.18), transparent 28%),
+        linear-gradient(135deg, #000 0%, #101010 35%, #181818 60%, #4c2a11 100%);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .container {
+      width: min(var(--max), calc(100% - 28px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: rgba(6,6,6,0.78);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 12px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      letter-spacing: 0.4px;
+      flex-shrink: 0;
+    }
+
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(145deg, var(--orange-2), #7d4517);
+      box-shadow: 0 0 0 4px rgba(244,164,96,0.12);
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 900;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .nav-links a:hover { color: #fff; }
+
+    .lang-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .lang-btn {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      padding: 9px 12px;
+      border-radius: 999px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all .18s ease;
+      font-size: 0.84rem;
+    }
+
+    .lang-btn:hover,
+    .lang-btn.active {
+      background: linear-gradient(135deg, var(--orange-2), var(--orange));
+      color: #111;
+    }
+
+    .nav-btn {
+      padding: 11px 16px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--orange-2), var(--orange));
+      color: #111;
+      font-weight: 900;
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      min-height: calc(100vh - 78px);
+      display: flex;
+      align-items: center;
+      padding: 56px 0 42px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(244,164,96,0.08);
+      border: 1px solid rgba(244,164,96,0.34);
+      color: #ffd7b1;
+      margin-bottom: 16px;
+      font-size: 0.93rem;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 6vw, 5.8rem);
+      line-height: 1.02;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      color: #ffd1a4;
+      text-shadow: 0 0 22px rgba(244,164,96,0.2);
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.16rem);
+      max-width: 760px;
+    }
+
+    .tagline {
+      display: inline-block;
+      margin: 20px 0 28px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #ffe3c6;
+      font-weight: 700;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 160px;
+      padding: 14px 20px;
+      border-radius: 14px;
+      font-weight: 800;
+      transition: transform .18s ease, opacity .18s ease;
+    }
+
+    .btn:hover { transform: translateY(-2px); opacity: 0.96; }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--orange-2), var(--orange));
+      color: #111;
+      box-shadow: var(--shadow);
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(244,164,96,0.45);
+      background: rgba(255,255,255,0.04);
+      color: #ffd8b7;
+    }
+
+    .hero-panel {
+      position: relative;
+      background: linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.03));
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .glow {
+      position: absolute;
+      right: -100px;
+      bottom: -100px;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(244,164,96,0.3), transparent 68%);
+      pointer-events: none;
+    }
+
+    .hero-badge {
+      width: 104px;
+      height: 104px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(145deg, var(--orange-2), #7a4216);
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: 900;
+      box-shadow: 0 0 0 6px rgba(244,164,96,0.1);
+      margin-bottom: 18px;
+    }
+
+    .mini-grid {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .mini-card {
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(0,0,0,0.22);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .mini-card strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #ffd7ae;
+    }
+
+    section {
+      padding: 82px 0;
+    }
+
+    .section-head {
+      max-width: 780px;
+      margin: 0 auto 34px;
+      text-align: center;
+    }
+
+    .section-head h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: #ffd4ab;
+      margin-bottom: 12px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+    }
+
+    .grid-4, .grid-3, .stats-grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .stats-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 28px; }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h3 {
+      color: #ffd7af;
+      margin-bottom: 8px;
+      font-size: 1.08rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.97rem;
+    }
+
+    .stat {
+      text-align: center;
+      padding: 24px 16px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 2rem;
+      color: var(--orange-2);
+      margin-bottom: 4px;
+    }
+
+    .portal-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 18px;
+    }
+
+    .portal-card {
+      position: relative;
+      overflow: hidden;
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+    }
+
+    .portal-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(244,164,96,0.34);
+      box-shadow: 0 24px 52px rgba(0,0,0,0.38);
+    }
+
+    .portal-badge {
+      width: 70px;
+      height: 70px;
+      border-radius: 20px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(145deg, var(--orange-2), #7b4315);
+      color: #fff;
+      font-size: 1.05rem;
+      font-weight: 900;
+      margin-bottom: 16px;
+      box-shadow: 0 0 0 5px rgba(244,164,96,0.08);
+    }
+
+    .soon {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 0.84rem;
+      color: #ffddb8;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(244,164,96,0.28);
+      background: rgba(244,164,96,0.08);
+    }
+
+    .roadmap {
+      display: grid;
+      gap: 16px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .step {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .step strong {
+      display: block;
+      color: #ffd8b8;
+      margin-bottom: 6px;
+    }
+
+    .contact-box {
+      text-align: center;
+      padding: 34px 24px;
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(244,164,96,0.14), rgba(255,255,255,0.04));
+      border: 1px solid rgba(244,164,96,0.22);
+      box-shadow: var(--shadow);
+    }
+
+    .contact-box p { color: var(--muted); }
+
+    .contact-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    footer {
+      padding: 34px 0 48px;
+      text-align: center;
+      color: #d8c7b6;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 1050px) {
+      .hero-grid,
+      .grid-4,
+      .grid-3,
+      .stats-grid,
+      .portal-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 920px) {
+      .nav {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .nav-right {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 820px) {
+      .hero-grid,
+      .grid-4,
+      .grid-3,
+      .stats-grid,
+      .portal-grid,
+      .mini-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .container { width: min(var(--max), calc(100% - 18px)); }
+      .hero-panel, .card, .contact-box { padding: 20px; }
+      .btn { width: 100%; }
+      h1 { font-size: 2.45rem; }
+      .nav-links { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#home">
+        <span class="brand-logo">BSS</span>
+        <span data-i18n="brand">BRIYANT SOLEY SIGNO 1815</span>
+      </a>
+
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="#about" data-i18n="navAbout">About</a>
+          <a href="#portal" data-i18n="navPortal">Portal</a>
+          <a href="#divisions" data-i18n="navDivisions">Divisions</a>
+          <a href="#roadmap" data-i18n="navRoadmap">Roadmap</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </div>
+
+        <div class="lang-toggle" aria-label="Language toggle">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ht">KREYÒL</button>
+          <button class="lang-btn" data-lang="es">ES</button>
+        </div>
+
+        <a class="nav-btn" href="#divisions" data-i18n="navExplore">Explore BSS</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="home" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow" data-i18n="eyebrow">Official BSS Portal • Unified Brand System</div>
+        <h1 data-i18n="heroTitle">Briyant Soley Signo 1815</h1>
+        <p data-i18n="heroText">
+          Welcome to the official portal of Briyant Soley Signo 1815 — a movement, a vision, and a powerful cultural identity built on passion, unity, discipline, and light. This portal now connects the homepage, divisions, and future BSS ecosystem under one official structure.
+        </p>
+        <div class="tagline" data-i18n="tagline">Yon motè nèf, yon sèl kout kle san bri</div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#portal" data-i18n="heroBtn1">Open the Portal</a>
+          <a class="btn btn-secondary" href="#divisions" data-i18n="heroBtn2">Explore Divisions</a>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="glow"></div>
+        <div class="hero-badge">1815</div>
+        <h3 style="font-size:1.4rem; margin-bottom:8px; color:#ffd7af;" data-i18n="panelTitle">Official Entry Point</h3>
+        <p style="color:var(--muted);" data-i18n="panelText">
+          This homepage now works like a real portal. Visitors can move from the main BSS identity into the official divisions and future pages with one clean experience.
+        </p>
+        <div class="mini-grid">
+          <div class="mini-card"><strong data-i18n="mini1t">Main Organization</strong><span data-i18n="mini1d">BSS 1815 official platform.</span></div>
+          <div class="mini-card"><strong data-i18n="mini2t">Connected Divisions</strong><span data-i18n="mini2d">Miami an Aksyon, Team San Presyon, Super Fanclub 5 Stars.</span></div>
+          <div class="mini-card"><strong data-i18n="mini3t">Multilingual Access</strong><span data-i18n="mini3d">English, Kreyòl, and Español support.</span></div>
+          <div class="mini-card"><strong data-i18n="mini4t">Portal Ready</strong><span data-i18n="mini4d">Built for future media, leadership, gallery, and store pages.</span></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="aboutTitle">About the Official Portal</h2>
+        <p data-i18n="aboutText">
+          This is no longer just a landing page. It is the official entrance to a full BSS ecosystem, built so every branch, fan group, and extension feels connected under one identity.
+        </p>
+      </div>
+      <div class="grid-4">
+        <div class="card">
+          <h3 data-i18n="aboutCard1t">Main Brand Identity</h3>
+          <p data-i18n="aboutCard1d">The BSS 1815 identity remains the parent symbol that gives the platform its official presence and authority.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="aboutCard2t">One Uniform System</h3>
+          <p data-i18n="aboutCard2d">All sections can share one premium black, orange, and gold visual system.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="aboutCard3t">Portal Navigation</h3>
+          <p data-i18n="aboutCard3d">Visitors can move from the homepage into divisions and future sections with a clear path.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="aboutCard4t">Official Growth</h3>
+          <p data-i18n="aboutCard4d">The site is ready to grow into leadership, media, gallery, contact, and store pages.</p>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div class="card stat"><strong>1815</strong><span data-i18n="stat1">Core Identity</span></div>
+        <div class="card stat"><strong>3</strong><span data-i18n="stat2">Live Division Pages</span></div>
+        <div class="card stat"><strong>3</strong><span data-i18n="stat3">Languages</span></div>
+        <div class="card stat"><strong>24/7</strong><span data-i18n="stat4">Online Presence</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portal">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="portalTitle">Portal Access</h2>
+        <p data-i18n="portalText">
+          Use this official portal section to move directly into the BSS divisions and the future full platform.
+        </p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <h3 data-i18n="portalCard1t">Clear Structure</h3>
+          <p data-i18n="portalCard1d">The portal makes the organization easier to understand and easier to expand.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="portalCard2t">Quick Navigation</h3>
+          <p data-i18n="portalCard2d">Visitors can reach division pages with one click from the homepage.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="portalCard3t">Professional Identity</h3>
+          <p data-i18n="portalCard3d">The site now feels like a real official organization portal instead of a simple landing page.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="divisions">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="divisionsTitle">Official Divisions</h2>
+        <p data-i18n="divisionsText">
+          These are the three official public-facing sections now connected inside the BSS portal.
+        </p>
+      </div>
+
+      <div class="portal-grid">
+        <a href="miami-an-aksyon.html" class="card portal-card">
+          <div class="portal-badge">MIA</div>
+          <h3 data-i18n="div1t">Miami an Aksyon</h3>
+          <p data-i18n="div1d">A regional action identity for visibility, events, and local presence connected to the BSS movement.</p>
+          <span class="soon" data-i18n="openPage">Open division page</span>
+        </a>
+
+        <a href="team-san-presyon.html" class="card portal-card">
+          <div class="portal-badge">TSP</div>
+          <h3 data-i18n="div2t">Team San Presyon</h3>
+          <p data-i18n="div2d">A dedicated team section for profiles, performances, movement visuals, pride, and official team identity.</p>
+          <span class="soon" data-i18n="openPage">Open division page</span>
+        </a>
+
+        <a href="super-fanclub-5stars.html" class="card portal-card">
+          <div class="portal-badge">5★</div>
+          <h3 data-i18n="div3t">Super Fanclub 5 Stars</h3>
+          <p data-i18n="div3d">A supporters and loyalty division built to spotlight devoted fans, recognition, and community presence.</p>
+          <span class="soon" data-i18n="openPage">Open division page</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="roadmapTitle">Recommended Next Build</h2>
+        <p data-i18n="roadmapText">
+          The smartest way to grow the full official platform is to keep building from this portal structure.
+        </p>
+      </div>
+      <div class="roadmap">
+        <div class="step"><strong data-i18n="step1t">Phase 1</strong><span data-i18n="step1d">Keep the homepage as the official portal and make every division polished and multilingual.</span></div>
+        <div class="step"><strong data-i18n="step2t">Phase 2</strong><span data-i18n="step2d">Add leadership, media, gallery, and official recognition sections.</span></div>
+        <div class="step"><strong data-i18n="step3t">Phase 3</strong><span data-i18n="step3d">Launch a full store, event system, forms, and a premium public-facing BSS experience.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <div class="section-head" style="margin-bottom:18px;">
+          <h2 data-i18n="contactTitle">Ready for the Next Upgrade</h2>
+          <p data-i18n="contactText">
+            The portal foundation is now in place. The next step is making every division page multilingual and expanding the full BSS digital ecosystem.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:briyantsigno@gmail.com" data-i18n="contactBtn1">Official Contact</a>
+          <a class="btn btn-secondary" href="https://briyantsoleysigno1815-site.vercel.app" target="_blank" rel="noopener" data-i18n="contactBtn2">Open Live Site</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" data-i18n="footerText">
+      © 2026 Briyant Soley Signo 1815 — Official Portal Version
+    </div>
+  </footer>
+
+  <script>
+    const translations = {
+      en: {
+        brand: 'BRIYANT SOLEY SIGNO 1815',
+        navAbout: 'About', navPortal: 'Portal', navDivisions: 'Divisions', navRoadmap: 'Roadmap', navContact: 'Contact', navExplore: 'Explore BSS',
+        eyebrow: 'Official BSS Portal • Unified Brand System',
+        heroTitle: 'Briyant Soley Signo 1815',
+        heroText: 'Welcome to the official portal of Briyant Soley Signo 1815 — a movement, a vision, and a powerful cultural identity built on passion, unity, discipline, and light. This portal now connects the homepage, divisions, and future BSS ecosystem under one official structure.',
+        tagline: 'Yon motè nèf, yon sèl kout kle san bri',
+        heroBtn1: 'Open the Portal', heroBtn2: 'Explore Divisions',
+        panelTitle: 'Official Entry Point',
+        panelText: 'This homepage now works like a real portal. Visitors can move from the main BSS identity into the official divisions and future pages with one clean experience.',
+        mini1t: 'Main Organization', mini1d: 'BSS 1815 official platform.',
+        mini2t: 'Connected Divisions', mini2d: 'Miami an Aksyon, Team San Presyon, Super Fanclub 5 Stars.',
+        mini3t: 'Multilingual Access', mini3d: 'English, Kreyòl, and Español support.',
+        mini4t: 'Portal Ready', mini4d: 'Built for future media, leadership, gallery, and store pages.',
+        aboutTitle: 'About the Official Portal',
+        aboutText: 'This is no longer just a landing page. It is the official entrance to a full BSS ecosystem, built so every branch, fan group, and extension feels connected under one identity.',
+        aboutCard1t: 'Main Brand Identity', aboutCard1d: 'The BSS 1815 identity remains the parent symbol that gives the platform its official presence and authority.',
+        aboutCard2t: 'One Uniform System', aboutCard2d: 'All sections can share one premium black, orange, and gold visual system.',
+        aboutCard3t: 'Portal Navigation', aboutCard3d: 'Visitors can move from the homepage into divisions and future sections with a clear path.',
+        aboutCard4t: 'Official Growth', aboutCard4d: 'The site is ready to grow into leadership, media, gallery, contact, and store pages.',
+        stat1: 'Core Identity', stat2: 'Live Division Pages', stat3: 'Languages', stat4: 'Online Presence',
+        portalTitle: 'Portal Access',
+        portalText: 'Use this official portal section to move directly into the BSS divisions and the future full platform.',
+        portalCard1t: 'Clear Structure', portalCard1d: 'The portal makes the organization easier to understand and easier to expand.',
+        portalCard2t: 'Quick Navigation', portalCard2d: 'Visitors can reach division pages with one click from the homepage.',
+        portalCard3t: 'Professional Identity', portalCard3d: 'The site now feels like a real official organization portal instead of a simple landing page.',
+        divisionsTitle: 'Official Divisions',
+        divisionsText: 'These are the three official public-facing sections now connected inside the BSS portal.',
+        div1t: 'Miami an Aksyon', div1d: 'A regional action identity for visibility, events, and local presence connected to the BSS movement.',
+        div2t: 'Team San Presyon', div2d: 'A dedicated team section for profiles, performances, movement visuals, pride, and official team identity.',
+        div3t: 'Super Fanclub 5 Stars', div3d: 'A supporters and loyalty division built to spotlight devoted fans, recognition, and community presence.',
+        openPage: 'Open division page',
+        roadmapTitle: 'Recommended Next Build',
+        roadmapText: 'The smartest way to grow the full official platform is to keep building from this portal structure.',
+        step1t: 'Phase 1', step1d: 'Keep the homepage as the official portal and make every division polished and multilingual.',
+        step2t: 'Phase 2', step2d: 'Add leadership, media, gallery, and official recognition sections.',
+        step3t: 'Phase 3', step3d: 'Launch a full store, event system, forms, and a premium public-facing BSS experience.',
+        contactTitle: 'Ready for the Next Upgrade',
+        contactText: 'The portal foundation is now in place. The next step is making every division page multilingual and expanding the full BSS digital ecosystem.',
+        contactBtn1: 'Official Contact', contactBtn2: 'Open Live Site',
+        footerText: '© 2026 Briyant Soley Signo 1815 — Official Portal Version'
+      },
+      ht: {
+        brand: 'BRIYANT SOLÈY SIGNO 1815',
+        navAbout: 'Konsènan', navPortal: 'Pòtal', navDivisions: 'Divizyon', navRoadmap: 'Plan', navContact: 'Kontak', navExplore: 'Eksplore BSS',
+        eyebrow: 'Pòtal Ofisyèl BSS • Sistèm Mak Inifye',
+        heroTitle: 'Briyant Solèy Signo 1815',
+        heroText: 'Byenveni sou pòtal ofisyèl Briyant Solèy Signo 1815 — yon mouvman, yon vizyon, ak yon idantite kiltirèl pisan ki bati sou pasyon, inite, disiplin, ak limyè. Pòtal sa a konekte kounye a paj dakèy la, divizyon yo, ak pwochen ekosistèm BSS la anba yon sèl estrikti ofisyèl.',
+        tagline: 'Yon motè nèf, yon sèl kout kle san bri',
+        heroBtn1: 'Louvri Pòtal la', heroBtn2: 'Eksplore Divizyon yo',
+        panelTitle: 'Pwen Antre Ofisyèl',
+        panelText: 'Paj dakèy sa a kounye a mache tankou yon vrè pòtal. Vizitè yo ka soti nan idantite prensipal BSS la pou antre nan divizyon ofisyèl yo ak pwochen paj yo nan yon eksperyans ki pwòp.',
+        mini1t: 'Òganizasyon Prensipal', mini1d: 'Platfòm ofisyèl BSS 1815 la.',
+        mini2t: 'Divizyon Konekte', mini2d: 'Miami an Aksyon, Team San Presyon, Super Fanclub 5 Stars.',
+        mini3t: 'Aksè Plizyè Lang', mini3d: 'Sipò an Anglè, Kreyòl, ak Panyòl.',
+        mini4t: 'Pòtal Pare', mini4d: 'Pare pou pwochen paj medya, dirijan, galri, ak store.',
+        aboutTitle: 'Konsènan Pòtal Ofisyèl la',
+        aboutText: 'Sa pa yon senp landing page ankò. Se antre ofisyèl yon ekosistèm BSS konplè, bati pou chak branch, gwoup fanatik, ak ekstansyon santi yo konekte anba yon sèl idantite.',
+        aboutCard1t: 'Idantite Mak Prensipal la', aboutCard1d: 'Idantite BSS 1815 la rete senbòl paran an ki bay platfòm nan prezans ak otorite ofisyèl li.',
+        aboutCard2t: 'Yon Sèl Sistèm Inifòm', aboutCard2d: 'Tout seksyon yo ka pataje menm sistèm vizyèl premium nwa, zoranj, ak lò.',
+        aboutCard3t: 'Navigasyon Pòtal', aboutCard3d: 'Vizitè yo ka soti nan homepage la pou antre nan divizyon yo ak pwochen seksyon yo ak yon chemen ki klè.',
+        aboutCard4t: 'Kwasans Ofisyèl', aboutCard4d: 'Sit la pare pou devlope vin gen paj dirijan, medya, galri, kontak, ak store.',
+        stat1: 'Idantite Santral', stat2: 'Paj Divizyon Aktif', stat3: 'Lang', stat4: 'Prezans Sou Entènèt',
+        portalTitle: 'Aksè Pòtal',
+        portalText: 'Sèvi ak seksyon pòtal ofisyèl sa a pou ale dirèkteman nan divizyon BSS yo ak tout pwochen platfòm la.',
+        portalCard1t: 'Estrikti Klè', portalCard1d: 'Pòtal la fè òganizasyon an pi fasil pou konprann epi pi fasil pou devlope.',
+        portalCard2t: 'Navigasyon Rapid', portalCard2d: 'Vizitè yo ka rive sou paj divizyon yo ak yon sèl klik depi nan homepage la.',
+        portalCard3t: 'Idantite Pwofesyonèl', portalCard3d: 'Sit la kounye a santi tankou yon vrè pòtal òganizasyon ofisyèl olye de yon senp landing page.',
+        divisionsTitle: 'Divizyon Ofisyèl yo',
+        divisionsText: 'Men twa seksyon piblik ofisyèl ki konekte kounye a andedan pòtal BSS la.',
+        div1t: 'Miami an Aksyon', div1d: 'Yon idantite aksyon rejyonal pou vizibilite, evènman, ak prezans lokal ki konekte ak mouvman BSS la.',
+        div2t: 'Team San Presyon', div2d: 'Yon seksyon ekip dedye pou pwofil, pèfòmans, vizyèl mouvman, fyète, ak idantite ekip ofisyèl.',
+        div3t: 'Super Fanclub 5 Stars', div3d: 'Yon divizyon sipòtè ak lwayote pou mete fanatik devwe, rekonesans, ak prezans kominotè an valè.',
+        openPage: 'Louvri paj divizyon an',
+        roadmapTitle: 'Pwochen Etap Rekòmande',
+        roadmapText: 'Pi bon fason pou fè tout platfòm ofisyèl la grandi se kontinye bati depi nan estrikti pòtal sa a.',
+        step1t: 'Faz 1', step1d: 'Kenbe homepage la kòm pòtal ofisyèl la epi fè chak divizyon vin pi pwòp ak plizyè lang.',
+        step2t: 'Faz 2', step2d: 'Ajoute seksyon dirijan, medya, galri, ak rekonesans ofisyèl.',
+        step3t: 'Faz 3', step3d: 'Lanse yon store konplè, sistèm evènman, fòm, ak yon eksperyans piblik BSS ki premium.',
+        contactTitle: 'Pare pou Pwochen Amelyorasyon an',
+        contactText: 'Fondasyon pòtal la deja an plas. Pwochen etap la se fè chak paj divizyon an plizyè lang epi elaji tout ekosistèm dijital BSS la.',
+        contactBtn1: 'Kontak Ofisyèl', contactBtn2: 'Louvri Sit la',
+        footerText: '© 2026 Briyant Solèy Signo 1815 — Vèsyon Pòtal Ofisyèl'
+      },
+      es: {
+        brand: 'BRIYANT SOLEY SIGNO 1815',
+        navAbout: 'Acerca de', navPortal: 'Portal', navDivisions: 'Divisiones', navRoadmap: 'Plan', navContact: 'Contacto', navExplore: 'Explorar BSS',
+        eyebrow: 'Portal Oficial BSS • Sistema de Marca Unificado',
+        heroTitle: 'Briyant Soley Signo 1815',
+        heroText: 'Bienvenido al portal oficial de Briyant Soley Signo 1815 — un movimiento, una visión y una poderosa identidad cultural construida sobre pasión, unidad, disciplina y luz. Este portal ahora conecta la página principal, las divisiones y el futuro ecosistema BSS bajo una sola estructura oficial.',
+        tagline: 'Yon motè nèf, yon sèl kout kle san bri',
+        heroBtn1: 'Abrir el Portal', heroBtn2: 'Explorar Divisiones',
+        panelTitle: 'Punto de Entrada Oficial',
+        panelText: 'Esta página principal ahora funciona como un portal real. Los visitantes pueden pasar desde la identidad principal de BSS hacia las divisiones oficiales y futuras páginas con una experiencia limpia.',
+        mini1t: 'Organización Principal', mini1d: 'Plataforma oficial de BSS 1815.',
+        mini2t: 'Divisiones Conectadas', mini2d: 'Miami an Aksyon, Team San Presyon, Super Fanclub 5 Stars.',
+        mini3t: 'Acceso Multilingüe', mini3d: 'Soporte en inglés, kreyòl y español.',
+        mini4t: 'Portal Listo', mini4d: 'Preparado para futuras páginas de medios, liderazgo, galería y tienda.',
+        aboutTitle: 'Sobre el Portal Oficial',
+        aboutText: 'Ya no es solo una página de inicio simple. Es la entrada oficial a un ecosistema BSS completo, construido para que cada rama, grupo de fans y extensión se sientan conectados bajo una sola identidad.',
+        aboutCard1t: 'Identidad Principal', aboutCard1d: 'La identidad BSS 1815 sigue siendo el símbolo principal que le da presencia y autoridad oficial a la plataforma.',
+        aboutCard2t: 'Un Sistema Uniforme', aboutCard2d: 'Todas las secciones pueden compartir un mismo sistema visual premium en negro, naranja y dorado.',
+        aboutCard3t: 'Navegación del Portal', aboutCard3d: 'Los visitantes pueden pasar desde la página principal a las divisiones y futuras secciones con una ruta clara.',
+        aboutCard4t: 'Crecimiento Oficial', aboutCard4d: 'El sitio está listo para crecer hacia páginas de liderazgo, medios, galería, contacto y tienda.',
+        stat1: 'Identidad Central', stat2: 'Páginas de División Activas', stat3: 'Idiomas', stat4: 'Presencia en Línea',
+        portalTitle: 'Acceso al Portal',
+        portalText: 'Usa esta sección oficial del portal para entrar directamente a las divisiones BSS y a la futura plataforma completa.',
+        portalCard1t: 'Estructura Clara', portalCard1d: 'El portal hace que la organización sea más fácil de entender y expandir.',
+        portalCard2t: 'Navegación Rápida', portalCard2d: 'Los visitantes pueden llegar a las páginas de división con un clic desde la página principal.',
+        portalCard3t: 'Identidad Profesional', portalCard3d: 'El sitio ahora se siente como un portal oficial real en lugar de una simple página de inicio.',
+        divisionsTitle: 'Divisiones Oficiales',
+        divisionsText: 'Estas son las tres secciones públicas oficiales conectadas ahora dentro del portal BSS.',
+        div1t: 'Miami an Aksyon', div1d: 'Una identidad regional de acción para visibilidad, eventos y presencia local conectada al movimiento BSS.',
+        div2t: 'Team San Presyon', div2d: 'Una sección de equipo dedicada para perfiles, actuaciones, visuales de movimiento, orgullo e identidad oficial.',
+        div3t: 'Super Fanclub 5 Stars', div3d: 'Una división de apoyo y lealtad diseñada para destacar fans devotos, reconocimiento y presencia comunitaria.',
+        openPage: 'Abrir página de división',
+        roadmapTitle: 'Próximo Desarrollo Recomendado',
+        roadmapText: 'La forma más inteligente de hacer crecer toda la plataforma oficial es seguir construyendo desde esta estructura de portal.',
+        step1t: 'Fase 1', step1d: 'Mantener la página principal como portal oficial y hacer que cada división sea pulida y multilingüe.',
+        step2t: 'Fase 2', step2d: 'Agregar secciones de liderazgo, medios, galería y reconocimiento oficial.',
+        step3t: 'Fase 3', step3d: 'Lanzar una tienda completa, sistema de eventos, formularios y una experiencia pública BSS premium.',
+        contactTitle: 'Listo para la Próxima Mejora',
+        contactText: 'La base del portal ya está en su lugar. El siguiente paso es hacer multilingüe cada página de división y expandir todo el ecosistema digital BSS.',
+        contactBtn1: 'Contacto Oficial', contactBtn2: 'Abrir Sitio en Vivo',
+        footerText: '© 2026 Briyant Soley Signo 1815 — Versión de Portal Oficial'
+      }
+    };
+
+    function applyLanguage(lang) {
+      document.documentElement.lang = lang === 'ht' ? 'ht' : lang;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+      localStorage.setItem('bss-lang', lang);
+    }
+
+    const savedLang = localStorage.getItem('bss-lang') || 'en';
+    applyLanguage(savedLang);
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => applyLanguage(btn.dataset.lang));
+    });
+  </script>
+</body>
+</html>
