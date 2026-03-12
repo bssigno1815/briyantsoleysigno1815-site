@@ -1,4 +1,30 @@
-<!DOCTYPE html>
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.lang-btn {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  padding: 9px 12px;
+  border-radius: 999px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all .18s ease;
+  font-size: 0.84rem;
+}
+
+.lang-btn:hover,
+.lang-btn.active {
+  background: linear-gradient(135deg, var(--orange-2), var(--orange));
+  color: #111;
+}<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
