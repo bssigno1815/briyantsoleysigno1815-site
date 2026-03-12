@@ -64,7 +64,42 @@
     @media (max-width:900px){.grid-3{grid-template-columns:1fr}.nav{flex-direction:column}}
   </style>
 </head>
-<body>
+<body></footer>
+
+<script>
+const translations = {
+  en: { title: "Briyant Soley Signo 1815" },
+  ht: { title: "Briyant Solèy Signo 1815" },
+  es: { title: "Briyant Soley Signo 1815" }
+};
+
+function setLang(lang) {
+  localStorage.setItem("bss-lang", lang);
+
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.dataset.i18n;
+    if (translations[lang][key]) {
+      el.textContent = translations[lang][key];
+    }
+  });
+
+  document.querySelectorAll(".lang-btn").forEach(btn =>
+    btn.classList.remove("active")
+  );
+
+  document
+    .querySelector(`.lang-btn[onclick="setLang('${lang}')"]`)
+    .classList.add("active");
+}
+
+window.onload = () => {
+  const saved = localStorage.getItem("bss-lang") || "en";
+  setLang(saved);
+};
+</script>
+
+</body>
+</html>
   <div class="topbar">
     <div class="container nav">
       <a class="brand" href="index.html"><span class="brand-logo">BSS</span><span>BRIYANT SOLEY SIGNO 1815</span></a>
