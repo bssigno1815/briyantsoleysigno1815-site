@@ -1,52 +1,52 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Briyant Soley Signo 1815</title>
-  <meta name="description" content="Official home of Briyant Soley Signo 1815." />
+  <meta name="description" content="Official platform structure for Briyant Soley Signo 1815, Team San Presyon, Super Fanclub 5 Stars, and Miami an Aksyon." />
   <style>
     :root {
       --orange: #f4a460;
-      --orange-2: #ffb56f;
-      --black: #050505;
+      --orange-2: #ffba73;
+      --orange-3: #ffcf9d;
+      --black: #060606;
       --panel: rgba(255,255,255,0.06);
-      --panel-border: rgba(255,255,255,0.12);
-      --text: #f8f3ee;
-      --muted: #d9c7b5;
-      --shadow: 0 18px 40px rgba(0,0,0,0.35);
-      --radius: 22px;
-      --max: 1180px;
+      --panel-2: rgba(255,255,255,0.04);
+      --border: rgba(255,255,255,0.12);
+      --text: #fff8f1;
+      --muted: #dcc6b2;
+      --shadow: 0 20px 44px rgba(0,0,0,0.34);
+      --radius: 24px;
+      --max: 1200px;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
     html { scroll-behavior: smooth; }
-
     body {
       font-family: Arial, Helvetica, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top, rgba(244,164,96,0.18), transparent 35%),
-        linear-gradient(135deg, #000 0%, #111 35%, #1a1a1a 60%, #5a3317 100%);
+        radial-gradient(circle at top, rgba(244,164,96,0.18), transparent 30%),
+        linear-gradient(135deg, #000 0%, #101010 35%, #181818 60%, #4c2a11 100%);
       line-height: 1.6;
       overflow-x: hidden;
     }
-
     a { color: inherit; text-decoration: none; }
     img { max-width: 100%; display: block; }
 
     .container {
-      width: min(var(--max), calc(100% - 32px));
+      width: min(var(--max), calc(100% - 28px));
       margin: 0 auto;
     }
 
     .topbar {
       position: sticky;
       top: 0;
-      z-index: 50;
+      z-index: 100;
+      background: rgba(6,6,6,0.74);
       backdrop-filter: blur(12px);
-      background: rgba(5,5,5,0.72);
       border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
@@ -56,35 +56,36 @@
       align-items: center;
       justify-content: space-between;
       gap: 18px;
+      padding: 12px 0;
     }
 
     .brand {
       display: flex;
       align-items: center;
       gap: 12px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
+      font-weight: 800;
+      letter-spacing: 0.4px;
     }
 
-    .brand-badge {
-      width: 44px;
-      height: 44px;
+    .brand-logo {
+      width: 46px;
+      height: 46px;
       border-radius: 50%;
       display: grid;
       place-items: center;
-      background: linear-gradient(145deg, var(--orange-2), #9a551f);
+      background: linear-gradient(145deg, var(--orange-2), #7d4517);
+      box-shadow: 0 0 0 4px rgba(244,164,96,0.12);
       color: #fff;
-      box-shadow: 0 0 0 3px rgba(244,164,96,0.15);
       font-size: 0.95rem;
     }
 
     .nav-links {
       display: flex;
-      align-items: center;
       gap: 18px;
       flex-wrap: wrap;
+      align-items: center;
       color: var(--muted);
-      font-size: 0.95rem;
+      font-size: 0.96rem;
     }
 
     .nav-links a:hover { color: #fff; }
@@ -92,86 +93,83 @@
     .nav-btn {
       padding: 11px 16px;
       border-radius: 999px;
-      background: var(--orange);
+      background: linear-gradient(135deg, var(--orange-2), var(--orange));
       color: #111;
-      font-weight: 700;
+      font-weight: 800;
       box-shadow: var(--shadow);
     }
 
     .hero {
-      position: relative;
+      padding: 54px 0 40px;
       min-height: calc(100vh - 74px);
       display: flex;
       align-items: center;
-      padding: 52px 0 36px;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
+      grid-template-columns: 1.1fr 0.9fr;
       gap: 28px;
       align-items: center;
     }
 
     .eyebrow {
       display: inline-flex;
-      align-items: center;
       gap: 10px;
+      align-items: center;
       padding: 8px 14px;
       border-radius: 999px;
-      border: 1px solid rgba(244,164,96,0.35);
       background: rgba(244,164,96,0.08);
+      border: 1px solid rgba(244,164,96,0.34);
       color: #ffd7b1;
-      font-size: 0.92rem;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
+      font-size: 0.93rem;
     }
 
     h1 {
-      font-size: clamp(2.6rem, 6vw, 5.7rem);
+      font-size: clamp(2.6rem, 6vw, 5.6rem);
       line-height: 1.02;
-      letter-spacing: 0.5px;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
       text-transform: uppercase;
-      color: #ffd0a2;
-      text-shadow: 0 0 24px rgba(244,164,96,0.22);
+      color: #ffd1a4;
+      text-shadow: 0 0 22px rgba(244,164,96,0.2);
     }
 
     .hero p {
       color: var(--muted);
-      font-size: clamp(1rem, 2vw, 1.17rem);
+      font-size: clamp(1rem, 2vw, 1.16rem);
       max-width: 760px;
     }
 
-    .slogan {
+    .tagline {
       display: inline-block;
-      margin-top: 20px;
-      margin-bottom: 28px;
+      margin: 20px 0 28px;
       padding: 10px 16px;
       border-radius: 999px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      color: #ffe2c7;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #ffe3c6;
       font-weight: 700;
     }
 
     .hero-actions {
       display: flex;
-      flex-wrap: wrap;
       gap: 14px;
+      flex-wrap: wrap;
     }
 
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-width: 150px;
+      min-width: 154px;
       padding: 14px 20px;
       border-radius: 14px;
-      font-weight: 700;
-      transition: transform .18s ease, background .18s ease, border-color .18s ease;
+      font-weight: 800;
+      transition: transform .18s ease, opacity .18s ease;
     }
 
-    .btn:hover { transform: translateY(-2px); }
+    .btn:hover { transform: translateY(-2px); opacity: 0.96; }
 
     .btn-primary {
       background: linear-gradient(135deg, var(--orange-2), var(--orange));
@@ -182,62 +180,62 @@
     .btn-secondary {
       border: 1px solid rgba(244,164,96,0.45);
       background: rgba(255,255,255,0.04);
-      color: #ffd9b6;
+      color: #ffd8b7;
     }
 
-    .hero-card {
+    .hero-panel {
       position: relative;
-      background: linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.04));
-      border: 1px solid var(--panel-border);
+      background: linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.03));
+      border: 1px solid var(--border);
       border-radius: 30px;
       padding: 26px;
       box-shadow: var(--shadow);
       overflow: hidden;
-      min-height: 440px;
     }
 
     .glow {
       position: absolute;
-      inset: auto -120px -120px auto;
-      width: 260px;
-      height: 260px;
+      right: -100px;
+      bottom: -100px;
+      width: 240px;
+      height: 240px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(244,164,96,0.35), transparent 65%);
+      background: radial-gradient(circle, rgba(244,164,96,0.3), transparent 68%);
       pointer-events: none;
     }
 
-    .hero-logo {
-      width: 96px;
-      height: 96px;
-      margin-bottom: 18px;
+    .hero-badge {
+      width: 104px;
+      height: 104px;
       border-radius: 50%;
-      background: linear-gradient(145deg, var(--orange-2), #7c4315);
       display: grid;
       place-items: center;
-      font-size: 1.35rem;
-      font-weight: 800;
-      box-shadow: 0 0 0 6px rgba(244,164,96,0.08);
+      background: linear-gradient(145deg, var(--orange-2), #7a4216);
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 900;
+      box-shadow: 0 0 0 6px rgba(244,164,96,0.1);
+      margin-bottom: 18px;
     }
 
     .mini-grid {
+      margin-top: 20px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 14px;
-      margin-top: 22px;
     }
 
     .mini-card {
       padding: 16px;
       border-radius: 18px;
-      background: rgba(0,0,0,0.24);
+      background: rgba(0,0,0,0.22);
       border: 1px solid rgba(255,255,255,0.08);
     }
 
     .mini-card strong {
       display: block;
-      color: #ffd3a8;
       margin-bottom: 6px;
-      font-size: 0.96rem;
+      color: #ffd7ae;
     }
 
     section {
@@ -245,14 +243,14 @@
     }
 
     .section-head {
-      max-width: 760px;
+      max-width: 780px;
       margin: 0 auto 34px;
       text-align: center;
     }
 
     .section-head h2 {
       font-size: clamp(2rem, 4vw, 3rem);
-      color: #ffd3a8;
+      color: #ffd4ab;
       margin-bottom: 12px;
     }
 
@@ -260,36 +258,25 @@
       color: var(--muted);
     }
 
-    .feature-grid,
-    .leadership-grid,
-    .stats-grid {
+    .grid-4, .grid-3, .stats-grid {
       display: grid;
       gap: 20px;
     }
 
-    .feature-grid {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-
-    .stats-grid {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      margin-top: 30px;
-    }
-
-    .leadership-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .stats-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 28px; }
 
     .card {
       background: var(--panel);
-      border: 1px solid var(--panel-border);
+      border: 1px solid var(--border);
       border-radius: var(--radius);
       padding: 24px;
       box-shadow: var(--shadow);
     }
 
     .card h3 {
-      color: #ffd6af;
+      color: #ffd7af;
       margin-bottom: 8px;
       font-size: 1.08rem;
     }
@@ -301,7 +288,7 @@
 
     .stat {
       text-align: center;
-      padding: 24px 18px;
+      padding: 24px 16px;
     }
 
     .stat strong {
@@ -311,112 +298,152 @@
       margin-bottom: 4px;
     }
 
-    .member {
+    .structure-wrap {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .tree {
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .tree ul {
+      list-style: none;
+      margin-top: 14px;
+    }
+
+    .tree li {
+      margin: 12px 0;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.06);
+      color: #ffe0c2;
+    }
+
+    .division-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 18px;
+    }
+
+    .division-card {
       position: relative;
       overflow: hidden;
     }
 
-    .member-top {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 14px;
-    }
-
-    .avatar {
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
+    .division-badge {
+      width: 68px;
+      height: 68px;
+      border-radius: 20px;
       display: grid;
       place-items: center;
-      background: linear-gradient(145deg, #ffbe80, #7b451a);
-      font-weight: 800;
+      background: linear-gradient(145deg, var(--orange-2), #7b4315);
       color: #fff;
+      font-size: 1.05rem;
+      font-weight: 900;
+      margin-bottom: 16px;
+      box-shadow: 0 0 0 5px rgba(244,164,96,0.08);
     }
 
-    .member small {
-      color: #ffc998;
-      font-weight: 700;
-    }
-
-    .banner {
-      margin-top: 42px;
-      padding: 28px;
-      border-radius: 28px;
-      background: linear-gradient(135deg, rgba(244,164,96,0.16), rgba(255,255,255,0.04));
+    .division-card .soon {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 0.84rem;
+      color: #ffddb8;
+      padding: 6px 10px;
+      border-radius: 999px;
       border: 1px solid rgba(244,164,96,0.28);
-      box-shadow: var(--shadow);
+      background: rgba(244,164,96,0.08);
+    }
+
+    .roadmap {
       display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 18px;
-      align-items: center;
+      gap: 16px;
+    }
+
+    .step {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .step strong {
+      display: block;
+      color: #ffd8b8;
+      margin-bottom: 6px;
     }
 
     .contact-box {
       text-align: center;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 28px;
       padding: 34px 24px;
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(244,164,96,0.14), rgba(255,255,255,0.04));
+      border: 1px solid rgba(244,164,96,0.22);
       box-shadow: var(--shadow);
     }
 
     .contact-box p { color: var(--muted); }
-    .contact-box .contact-links {
+
+    .contact-actions {
       display: flex;
-      flex-wrap: wrap;
       gap: 12px;
       justify-content: center;
+      flex-wrap: wrap;
       margin-top: 18px;
     }
 
     footer {
       padding: 34px 0 48px;
       text-align: center;
-      color: #d5c2af;
+      color: #d8c7b6;
       font-size: 0.95rem;
     }
 
-    @media (max-width: 980px) {
+    @media (max-width: 1050px) {
       .hero-grid,
-      .feature-grid,
-      .leadership-grid,
+      .structure-wrap,
+      .grid-4,
+      .grid-3,
       .stats-grid,
-      .banner {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        min-height: auto;
-        padding-top: 34px;
-      }
-
-      .nav {
-        flex-direction: column;
-        justify-content: center;
-        padding: 12px 0;
+      .division-grid {
+        grid-template-columns: 1fr 1fr;
       }
     }
 
-    @media (max-width: 640px) {
-      .container {
-        width: min(var(--max), calc(100% - 20px));
-      }
-
-      .hero-card,
-      .card,
-      .banner,
-      .contact-box {
-        padding: 20px;
-      }
-
+    @media (max-width: 820px) {
+      .hero-grid,
+      .structure-wrap,
+      .grid-4,
+      .grid-3,
+      .stats-grid,
+      .division-grid,
       .mini-grid {
         grid-template-columns: 1fr;
       }
 
-      .btn {
-        width: 100%;
+      .nav {
+        flex-direction: column;
       }
+
+      .hero {
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .container { width: min(var(--max), calc(100% - 18px)); }
+      .hero-panel, .card, .tree, .contact-box { padding: 20px; }
+      .btn { width: 100%; }
+      h1 { font-size: 2.4rem; }
     }
   </style>
 </head>
@@ -424,15 +451,16 @@
   <div class="topbar">
     <div class="container nav">
       <a class="brand" href="#home">
-        <span class="brand-badge">BSS</span>
+        <span class="brand-logo">BSS</span>
         <span>BRIYANT SOLEY SIGNO 1815</span>
       </a>
       <div class="nav-links">
         <a href="#about">About</a>
-        <a href="#vision">Vision</a>
-        <a href="#leadership">Leadership</a>
+        <a href="#structure">Structure</a>
+        <a href="#divisions">Divisions</a>
+        <a href="#roadmap">Roadmap</a>
         <a href="#contact">Contact</a>
-        <a class="nav-btn" href="#contact">Join the Movement</a>
+        <a class="nav-btn" href="#divisions">Explore BSS</a>
       </div>
     </div>
   </div>
@@ -440,42 +468,30 @@
   <main id="home" class="hero">
     <div class="container hero-grid">
       <div>
-        <div class="eyebrow">Official BSS Platform • Orange & Black Identity</div>
+        <div class="eyebrow">Official BSS Platform • Uniform Brand System</div>
         <h1>Briyant Soley Signo 1815</h1>
         <p>
-          Welcome to the official home of Briyant Soley Signo 1815 — a movement, a vision, and a powerful cultural identity built on passion, unity, discipline, and light.
+          Welcome to the official digital home of Briyant Soley Signo 1815 — a movement, a vision, and a powerful cultural identity built on passion, unity, discipline, and light. This structure is now ready to grow into the full official BSS platform.
         </p>
-        <div class="slogan">Yon motè nèf, yon sèl kout kle san bri</div>
+        <div class="tagline">Yon motè nèf, yon sèl kout kle san bri</div>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#about">About BSS</a>
-          <a class="btn btn-secondary" href="#leadership">Meet the Team</a>
+          <a class="btn btn-primary" href="#divisions">Explore Divisions</a>
+          <a class="btn btn-secondary" href="#roadmap">Build Next Pages</a>
         </div>
       </div>
 
-      <div class="hero-card">
+      <div class="hero-panel">
         <div class="glow"></div>
-        <div class="hero-logo">BSS</div>
-        <h3 style="font-size:1.4rem; margin-bottom:10px; color:#ffd4ab;">A Stronger Official Homepage</h3>
+        <div class="hero-badge">1815</div>
+        <h3 style="font-size:1.4rem; margin-bottom:8px; color:#ffd7af;">Official Website Structure</h3>
         <p style="color:var(--muted);">
-          This upgraded homepage gives BSS a cleaner, more official public image with sections ready for future expansion.
+          This homepage is now the central entrance for the entire BSS ecosystem. Every page and division can follow one clean, premium identity.
         </p>
         <div class="mini-grid">
-          <div class="mini-card">
-            <strong>Leadership</strong>
-            <span>Official profiles and honored members.</span>
-          </div>
-          <div class="mini-card">
-            <strong>Fanbase</strong>
-            <span>Supporters, photos, and public pride.</span>
-          </div>
-          <div class="mini-card">
-            <strong>Media</strong>
-            <span>Videos, images, and promotional content.</span>
-          </div>
-          <div class="mini-card">
-            <strong>Store</strong>
-            <span>Merch, flags, shirts, and future drops.</span>
-          </div>
+          <div class="mini-card"><strong>Main Organization</strong><span>BSS 1815 official platform.</span></div>
+          <div class="mini-card"><strong>Divisions</strong><span>Miami an Aksyon, Team San Presyon, Super Fanclub 5 Stars.</span></div>
+          <div class="mini-card"><strong>Visual Uniformity</strong><span>One gold, orange, and black badge system.</span></div>
+          <div class="mini-card"><strong>Growth Ready</strong><span>Pages can now be added one by one.</span></div>
         </div>
       </div>
     </div>
@@ -484,121 +500,128 @@
   <section id="about">
     <div class="container">
       <div class="section-head">
-        <h2>About BSS 1815</h2>
+        <h2>About the Platform</h2>
         <p>
-          Briyant Soley Signo 1815 stands for brilliance, culture, loyalty, and organized vision. This platform is built to reflect the image, mission, and future of the organization with pride.
+          This is no longer just a landing page. It is the official structure for a complete BSS ecosystem, built so every branch, fan group, and movement extension feels connected under one identity.
         </p>
       </div>
-
-      <div class="feature-grid">
+      <div class="grid-4">
         <div class="card">
-          <h3>Official Identity</h3>
-          <p>BSS branding is rooted in apricot orange and black — a bold, recognizable look built for impact.</p>
+          <h3>Main Brand Identity</h3>
+          <p>The BSS 1815 shield is the parent symbol that gives the platform its official presence and authority.</p>
         </div>
         <div class="card">
-          <h3>Community Power</h3>
-          <p>This movement is built on people, presence, and the energy of a loyal fanbase at home and abroad.</p>
+          <h3>Uniform Design</h3>
+          <p>All sub-sections can share the same black, orange, gold, and premium emblem style for consistency.</p>
         </div>
         <div class="card">
-          <h3>Digital Growth</h3>
-          <p>The site is ready to grow into a full portal with media, leadership, store, contact forms, and more.</p>
+          <h3>Expandable Structure</h3>
+          <p>The site is ready for leadership pages, fan portals, media sections, events, and merch pages.</p>
         </div>
         <div class="card">
-          <h3>Respect & Legacy</h3>
-          <p>Every page can be used to honor members, preserve history, and push the organization forward.</p>
+          <h3>Official Presence</h3>
+          <p>This gives BSS a stronger public image for supporters, members, media, and future outreach.</p>
         </div>
       </div>
-
       <div class="stats-grid">
-        <div class="card stat"><strong>1815</strong><span>Identity & Legacy</span></div>
-        <div class="card stat"><strong>100%</strong><span>BSS Branding</span></div>
+        <div class="card stat"><strong>1815</strong><span>Core Identity</span></div>
+        <div class="card stat"><strong>4</strong><span>Official Brand Units</span></div>
+        <div class="card stat"><strong>1</strong><span>Uniform Visual System</span></div>
         <div class="card stat"><strong>24/7</strong><span>Online Presence</span></div>
-        <div class="card stat"><strong>1 Vision</strong><span>One Strong Direction</span></div>
       </div>
     </div>
   </section>
 
-  <section id="vision">
-    <div class="container">
-      <div class="section-head">
-        <h2>What This Homepage Can Become</h2>
-        <p>
-          This is no longer just a temporary page. It is now a professional base that can expand into the full BSS experience.
-        </p>
-      </div>
-
-      <div class="feature-grid">
-        <div class="card">
-          <h3>Leadership Section</h3>
-          <p>Add profiles for presidents, executives, honored icons, and official administrators.</p>
-        </div>
-        <div class="card">
-          <h3>Fanbase Gallery</h3>
-          <p>Show supporters, events, banner photos, and moments of pride with animated media later.</p>
-        </div>
-        <div class="card">
-          <h3>Store & Merch</h3>
-          <p>Sell shirts, flags, hats, bracelets, and official BSS items directly from the site.</p>
-        </div>
-        <div class="card">
-          <h3>Contact & Booking</h3>
-          <p>Enable inquiries, bookings, messages, and fan contact through a clean modern interface.</p>
-        </div>
-      </div>
-
-      <div class="banner">
-        <div>
-          <h3 style="font-size:1.5rem; color:#ffd8b6; margin-bottom:8px;">Built for a Bigger Future</h3>
-          <p style="color:var(--muted);">
-            The foundation is now clean and live. Next, we can add official visuals, real logo placement, media sections, and a much more premium BSS experience.
+  <section id="structure">
+    <div class="container structure-wrap">
+      <div>
+        <div class="section-head" style="text-align:left; margin:0 0 24px;">
+          <h2>Official Website Structure</h2>
+          <p>
+            The platform can now grow around one clear hierarchy so visitors instantly understand the organization.
           </p>
         </div>
-        <a class="btn btn-primary" href="#contact">Upgrade the Platform</a>
+        <div class="tree">
+          <h3 style="color:#ffd8b3; margin-bottom:6px;">BSS Ecosystem Map</h3>
+          <ul>
+            <li><strong>BSS 1815</strong> — Main organization and official brand identity</li>
+            <li><strong>Miami an Aksyon</strong> — Regional / local action branch</li>
+            <li><strong>Team San Presyon</strong> — Team identity and performance / movement section</li>
+            <li><strong>Super Fanclub 5 Stars</strong> — supporters, fans, and loyalty community</li>
+            <li><strong>Future Pages</strong> — Leadership, Media, Gallery, Store, Contact</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-bottom:10px;">What Makes It Official</h3>
+        <p style="margin-bottom:16px;">
+          A strong official site does not just look good — it explains who the organization is, how the divisions connect, and where the platform is going next.
+        </p>
+        <div class="roadmap">
+          <div class="step"><strong>Parent Brand</strong><span>BSS 1815 remains the umbrella identity.</span></div>
+          <div class="step"><strong>Sub-Brands</strong><span>Each unit gets its own logo and page while staying visually aligned.</span></div>
+          <div class="step"><strong>Future Scale</strong><span>More branches can be added later without breaking the design system.</span></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="leadership">
+  <section id="divisions">
     <div class="container">
       <div class="section-head">
-        <h2>Leadership Preview</h2>
+        <h2>Official Divisions</h2>
         <p>
-          These are sample cards showing how the homepage can introduce the structure and strength of the organization.
+          These are the three major public-facing sections that can now be built under the main BSS identity.
         </p>
       </div>
 
-      <div class="leadership-grid">
-        <div class="card member">
-          <div class="member-top">
-            <div class="avatar">SA</div>
-            <div>
-              <h3>Super Admin</h3>
-              <small>Dirijan Vizyonè</small>
-            </div>
-          </div>
-          <p>Guides the platform, protects the vision, and oversees the official direction of the digital presence.</p>
+      <div class="division-grid">
+        <div class="card division-card">
+          <div class="division-badge">MIA</div>
+          <h3>Miami an Aksyon</h3>
+          <p>A regional action identity for visibility, events, and local presence connected to the BSS movement.</p>
+          <span class="soon">Next page ready to build</span>
         </div>
 
-        <div class="card member">
-          <div class="member-top">
-            <div class="avatar">PDG</div>
-            <div>
-              <h3>Executive Leadership</h3>
-              <small>Official Team</small>
-            </div>
-          </div>
-          <p>Represents organizational structure, communication, operations, and the authority of the movement.</p>
+        <div class="card division-card">
+          <div class="division-badge">TSP</div>
+          <h3>Team San Presyon</h3>
+          <p>A dedicated team section for profiles, performances, movement visuals, pride, and official team identity.</p>
+          <span class="soon">Next page ready to build</span>
         </div>
 
-        <div class="card member">
-          <div class="member-top">
-            <div class="avatar">BSS</div>
-            <div>
-              <h3>Honored Members</h3>
-              <small>Legacy & Respect</small>
-            </div>
-          </div>
-          <p>Preserves recognition for people whose commitment, sacrifice, and presence shaped BSS identity.</p>
+        <div class="card division-card">
+          <div class="division-badge">5★</div>
+          <h3>Super Fanclub 5 Stars</h3>
+          <p>A supporters and loyalty division built to spotlight devoted fans, recognition, and community presence.</p>
+          <span class="soon">Next page ready to build</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap">
+    <div class="container">
+      <div class="section-head">
+        <h2>Recommended Build Order</h2>
+        <p>
+          The smartest way to complete the full official platform is to build the structure in phases.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Phase 1</h3>
+          <p>Finalize homepage with all official logos and clickable division cards.</p>
+        </div>
+        <div class="card">
+          <h3>Phase 2</h3>
+          <p>Build Team San Presyon, Super Fanclub 5 Stars, and Miami an Aksyon pages.</p>
+        </div>
+        <div class="card">
+          <h3>Phase 3</h3>
+          <p>Add Leadership, Media, Gallery, Contact, and Store pages to complete the official site.</p>
         </div>
       </div>
     </div>
@@ -607,15 +630,14 @@
   <section id="contact">
     <div class="container">
       <div class="contact-box">
-        <div class="section-head" style="margin-bottom: 18px;">
-          <h2>Official Contact</h2>
+        <div class="section-head" style="margin-bottom:18px;">
+          <h2>Ready for the Next Page</h2>
           <p>
-            Ready to turn this homepage into the full official BSS portal? The foundation is live and ready for the next phase.
+            The structure is now in place. The next best step is building the first official division page under this uniform system.
           </p>
         </div>
-
-        <div class="contact-links">
-          <a class="btn btn-primary" href="mailto:briyantsigno@gmail.com">Email BSS</a>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:briyantsigno@gmail.com">Official Contact</a>
           <a class="btn btn-secondary" href="https://briyantsoleysigno1815-site.vercel.app" target="_blank" rel="noopener">Open Live Site</a>
         </div>
       </div>
@@ -624,7 +646,7 @@
 
   <footer>
     <div class="container">
-      © 2026 Briyant Soley Signo 1815 — Official Website Launch Version
+      © 2026 Briyant Soley Signo 1815 — Official Structure Version
     </div>
   </footer>
 </body>
