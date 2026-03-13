@@ -1,4 +1,8 @@
-.leadership-grid {
+.h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #f4a460;
+}.leadership-grid {
   gap: 20px;
 }
 
