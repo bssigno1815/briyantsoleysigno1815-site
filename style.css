@@ -1,6 +1,19 @@
 .main-header {
   background: linear-gradient(
     to bottom,
+    #d96b2b 0%,   /* zoranj fonse motè a */
+    #b85a24 40%, /* zoranj fonse pi pwofon */
+    #000000 100% /* nwa */
+  );
+  padding: 22px 22px;
+  border-bottom: 3px solid #d96b2b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 130px;
+}.main-header {
+  background: linear-gradient(
+    to bottom,
     #f4a460 0%,
     #e39a54 25%,
     #c87a3c 55%,
