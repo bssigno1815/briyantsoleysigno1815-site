@@ -1,3 +1,44 @@
-images/ansyen/jude-joseph.jpg
-images/ansyen/grenn.jpg
-images/ansyen/ti-rat.jpg
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ansyen Dirijan BSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="main-header">
+  <div class="logo-area">
+    <img src="images/logo-bss1815.png" alt="BSS 1815 Logo">
+    <h1>BRIYANT SOLEY SIGNÒ 1815</h1>
+  </div>
+
+  <nav class="main-nav">
+    <a href="index.html">Akèy</a>
+    <a href="istwa.html">Istwa</a>
+    <a href="dirijan.html">Dirijan</a>
+    <a href="ansyen-dirijan.html" class="active">Ansyen Dirijan</a>
+    <a href="fanatik-zele.html">Fanatik Zèlé</a>
+    <a href="pitit-kay.html">Pitit Kay</a>
+    <a href="ti-machann.html">Ti Machann</a>
+    <a href="store.html">Magazen</a>
+    <a href="video.html">Videyo</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h2>Ansyen Dirijan</h2>
+  <p>Onè ak rekonesans pou lidè ki te make epòk yo.</p>
+</section>
+
+<section class="page-content container">
+  <p>Lis ansyen dirijan yo ap vini isit la...</p>
+</section>
+
+<footer>…(same footer)…</footer>
+
+</body>
+</html>
