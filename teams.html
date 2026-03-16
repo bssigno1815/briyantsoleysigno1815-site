@@ -1,186 +1,109 @@
 <!DOCTYPE html>
 <html lang="ht">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ekip yo – BRIYANT SOLÈY SIGNO 1815</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSS 1815 — Ekip Ofisyèl</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #FFA559; /* Orange Apricot */
+            margin-top: 40px;
+            font-size: 40px;
+            letter-spacing: 2px;
+        }
+
+        .teams-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px;
+        }
+
+        .team-card {
+            background: #111;
+            border: 2px solid #FFA559;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .team-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .team-card h2 {
+            color: #FFA559;
+            margin: 15px 0 5px;
+            font-size: 24px;
+        }
+
+        .team-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 18px;
+            background: #FFA559;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .team-card a:hover {
+            background: #ff8c2b;
+        }
+    </style>
 </head>
 
 <body>
 
-  <!-- ================= HEADER ================= -->
-  <header class="main-header">
-    <div class="header-logo">
-      <img src="images/logo-briyant-soley-signo-1815.png"
-           alt="Logo BRIYANT SOLÈY SIGNO 1815" />
+    <h1>EKIP OFISYÈL BSS 1815</h1>
+
+    <div class="teams-container">
+
+        <!-- MIAMI AN AKSYON -->
+        <div class="team-card">
+            <img src="images/teams/miami-an-aksyon.jpeg" alt="MIAMI AN AKSYON">
+            <h2>MIAMI AN AKSYON</h2>
+        </div>
+
+        <!-- TEAM SAN PRESYON -->
+        <div class="team-card">
+            <img src="images/teams/team-san-presyon.jpeg" alt="TEAM SAN PRESYON">
+            <h2>TEAM SAN PRESYON</h2>
+        </div>
+
+        <!-- TEAM BACKUP -->
+        <div class="team-card">
+            <img src="images/teams/team-backup-II.jpeg" alt="TEAM BACKUP">
+            <h2>TEAM BACKUP</h2>
+        </div>
+
+        <!-- SFC 5 STARS -->
+        <div class="team-card">
+            <img src="images/teams/sfc-5-stars.jpeg" alt="SFC 5 STARS">
+            <h2>SFC 5 STARS ★★★★★</h2>
+        </div>
+
+        <!-- TEAM ANGRENAY -->
+        <div class="team-card">
+            <img src="images/teams/team-angrenay.jpeg" alt="TEAM ANGRENAY">
+            <h2>TEAM ANGRENAY</h2>
+        </div>
+
     </div>
-
-    <h1 class="site-title">BRIYANT SOLÈY SIGNO 1815</h1>
-
-    <nav class="main-nav">
-      <a href="index.html">Akèy</a>
-      <a href="teams.html" class="active">Ekip yo</a>
-      <a href="contact.html">Kontak</a>
-    </nav>
-  </header>
-
-
-
-  <!-- ================= TEAM BACKUP ================= -->
-  <section id="team-backup" class="team-section">
-    <div class="team-card">
-      <h2 class="team-title">TEAM BACKUP</h2>
-
-      <div class="team-photo">
-        <img src="images/team-backup.jpg"
-             alt="TEAM BACKUP - Ekip solid ak disipline" />
-      </div>
-
-      <div class="team-branding">
-        <img src="images/logo-briyant-soley-signo-1815.png"
-             alt="Logo BRIYANT SOLÈY SIGNO 1815" />
-      </div>
-
-      <p class="team-description">
-        TEAM BACKUP se ekip ki toujou pare, toujou la pou soutni BRIYANT SOLÈY SIGNO 1815.
-        Yo travay ak disiplin, presizyon, ak respè pou misyon 1815 la.
-      </p>
-
-      <p class="team-closing">
-        TEAM BACKUP toujou kanpe fò pou BRIYANT SOLÈY SIGNO 1815.
-      </p>
-    </div>
-  </section>
-
-
-
-  <!-- ================= TEAM ANGRENAY ================= -->
-  <section id="team-angrenay" class="team-section">
-    <div class="team-card">
-      <h2 class="team-title">TEAM ANGRENAY</h2>
-
-      <div class="team-photo">
-        <img src="images/team-angrenay.jpg"
-             alt="TEAM ANGRENAY - Fen li pa bon ankò" />
-      </div>
-
-      <div class="team-branding">
-        <img src="images/logo-briyant-soley-signo-1815.png"
-             alt="Logo BRIYANT SOLÈY SIGNO 1815" />
-      </div>
-
-      <p class="team-description">
-        TEAM ANGRENAY te pote enèji ak pasyon, men fen li pa bon ankò.
-        Foto sa a se temwayaj ofisyèl sou istwa ekip la nan BRIYANT SOLÈY SIGNO 1815.
-      </p>
-
-      <p class="team-closing">
-        Nou respekte chak manm, chak bat tanbou, chak moman.
-      </p>
-    </div>
-  </section>
-
-
-
-  <!-- ================= MIAMI AN AKSYON ================= -->
-  <section id="miami-an-aksyon" class="team-section">
-    <div class="team-card">
-      <h2 class="team-title">MIAMI AN AKSYON</h2>
-
-      <div class="team-photo">
-        <img src="images/miami-an-aksyon.jpg"
-             alt="MIAMI AN AKSYON - Travay san pran souf pou 1815" />
-      </div>
-
-      <div class="team-branding">
-        <img src="images/logo-briyant-soley-signo-1815.png"
-             alt="Logo BRIYANT SOLÈY SIGNO 1815" />
-      </div>
-
-      <p class="team-description">
-        MIAMI AN AKSYON se ekip ki fè travay la mache. Yo monte dekorasyon,
-        ranje son, netwaye espas la, epi asire tout bagay klè pou BRIYANT SOLÈY SIGNO 1815.
-      </p>
-
-      <p class="team-closing">
-        San yo, pa gen aksyon. Yo se bra travay 1815.
-      </p>
-    </div>
-  </section>
-
-
-
-  <!-- ================= TEAM SAN PRESYON ================= -->
-  <section id="team-san-presyon" class="team-section">
-    <div class="team-card">
-      <h2 class="team-title">TEAM SAN PRESYON</h2>
-
-      <div class="team-photo">
-        <img src="images/team-san-presyon.jpg"
-             alt="TEAM SAN PRESYON - Ambians relax ak travay san stres" />
-      </div>
-
-      <div class="team-branding">
-        <img src="images/logo-briyant-soley-signo-1815.png"
-             alt="Logo BRIYANT SOLÈY SIGNO 1815" />
-      </div>
-
-      <p class="team-description">
-        TEAM SAN PRESYON ap travay, men yo pa pran presyon. Yo jere mizik ak teknik
-        nan yon vibe relax, ak souri, san okenn stres.
-      </p>
-
-      <p class="team-closing">
-        San fret, san presyon — se stil yo.
-      </p>
-    </div>
-  </section>
-
-
-
-  <!-- ================= SFC 5 STARS ================= -->
-  <section id="sfc-5-stars" class="team-section">
-    <div class="team-card">
-      <h2 class="team-title">SFC 5 STARS ★★★★★</h2>
-
-      <div class="team-photo">
-        <img src="images/sfc-5-stars.jpg"
-             alt="SFC 5 STARS - Elegance ak klas nan Briyant Bal Reward" />
-      </div>
-
-      <div class="team-branding">
-        <img src="images/logo-briyant-soley-signo-1815.png"
-             alt="Logo BRIYANT SOLÈY SIGNO 1815" />
-      </div>
-
-      <p class="team-description">
-        SFC 5 STARS se ekip ki gen klas. Yo travay ak presizyon, pwofesyonalis,
-        ak prezans ki matche ak non yo: 5 etwal.
-      </p>
-
-      <p class="team-closing">
-        SFC 5 STARS — senbòl ekselans nan BRIYANT SOLÈY SIGNO 1815.
-      </p>
-    </div>
-  </section>
-
-
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="main-footer">
-    <p class="footer-title">BRIYANT SOLÈY SIGNO 1815</p>
-
-    <p class="footer-info">
-      6934 Coral Cove Drive • Orlando, FL 32818<br>
-      Tel: (407) 000‑0000 • WhatsApp: +1 (407) 000‑0000<br>
-      Instagram • TikTok • Facebook • Twitter/X
-    </p>
-
-    <p class="footer-copy">
-      © 2026 BRIYANT SOLÈY SIGNO 1815 — Tout dwa rezève.
-    </p>
-  </footer>
 
 </body>
 </html>
