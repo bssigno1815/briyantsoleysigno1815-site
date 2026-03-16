@@ -162,5 +162,186 @@ footer {
 
     .hero h1 {
         font-size: 2rem;
-    }
-}
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Briyant Solèy Signo 1815 | Sit Ofisyèl</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="main-header">
+  <div class="logo-area">
+    <img src="bss-logo-1815.jpeg" alt="BSS 1815 Logo" class="bss-logo">
+    <h1>BRIYANT SOLEY SIGNÒ 1815</h1>
+  </div>
+
+  <nav class="main-nav">
+    <a href="index.html">Akèy</a>
+    <a href="istwa.html">Istwa</a>
+    <a href="dirijan.html">Dirijan</a>
+    <a href="ansyen-dirijan.html">Ansyen Dirijan</a>
+    <a href="fanatik-zele.html">Fanatik Zèlé</a>
+    <a href="pitit-kay.html">Pitit Kay</a>
+    <a href="ti-machann.html">Ti Machann</a>
+    <a href="store.html">Magazen</a>
+    <a href="video.html">Videyo</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+</header>
+
+<main id="home" class="hero">
+  <div class="container hero-grid">
+
+    <div>
+      <div class="eyebrow">Sit Ofisyèl BSS • Estrikti Premium</div>
+      <h1>Briyant Solèy Signo 1815</h1>
+
+      <p>
+        Byenveni sou sit ofisyèl Briyant Solèy Signo 1815. Isit la ou jwenn istwa nou, dirijan yo, ansyen dirijan yo, fanatik zèlé yo, pitit kay yo, seksyon Ti Machann nan, magazen, videyo, ak kontak ofisyèl.
+      </p>
+
+      <div class="tagline">Yon motè nèf, yon sèl kout kle san bri</div>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#sections">Louvri Seksyon yo</a>
+        <a class="btn btn-secondary" href="kontak.html">Kontakte BSS</a>
+      </div>
+    </div>
+
+    <div class="hero-panel">
+      <div class="hero-badge">1815</div>
+
+      <img src="bss-engine.png" alt="Motè BSS" class="engine-img">
+
+      <h3 class="engine-title">
+        MOTÈ NOU TOU NÈF • YON SÈL KOUT KLE SAN BRI
+      </h3>
+
+      <p class="engine-text">
+        Homepage sa a se pwen antre prensipal la pou tout paj ofisyèl BSS yo. Chak seksyon anba a deja konekte ak paj pa li.
+      </p>
+
+      <div class="mini-grid">
+        <div class="mini-card"><strong>Istwa</strong><span>Orijin, valè, ak eritaj BSS.</span></div>
+        <div class="mini-card"><strong>Dirijan</strong><span>Lidèchip ofisyèl ak estrikti.</span></div>
+        <div class="mini-card"><strong>Fanmi BSS</strong><span>Fanatik zèlé, pitit kay, ansyen dirijan.</span></div>
+        <div class="mini-card"><strong>Aktivite</strong><span>Ti machann, videyo, magazen, kontak.</span></div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<section id="sections">
+  <div class="container">
+    <div class="section-head">
+      <h2>Seksyon Ofisyèl yo</h2>
+      <p>Tout paj ki anba yo pare pou sèvi kòm estrikti prensipal sit ofisyèl BSS 1815 la.</p>
+    </div>
+
+    <div class="portal-grid">
+
+      <a href="istwa.html" class="card portal-card">
+        <div class="portal-badge">IST</div>
+        <h3>Istwa BSS</h3>
+        <p>Orijin, fondasyon, valè, vizyon, ak chemen istorik BSS.</p>
+        <span class="soon">Louvri paj la</span>
+      </a>
+
+      <a href="dirijan.html" class="card portal-card">
+        <div class="portal-badge">DIR</div>
+        <h3>Dirijan</h3>
+        <p>Lidèchip aktyèl la ak estrikti ofisyèl.</p>
+        <span class="soon">Louvri paj la</span>
+      </a>
+
+      <a href="ansyen-dirijan.html" class="card portal-card">
+        <div class="portal-badge">ANS</div>
+        <h3>Ansyen Dirijan</h3>
+        <p>Onè ak rekonesans pou lidè ki te make epòk yo.</p>
+        <span class="soon">Louvri paj la</span>
+      </a>
+
+      <a href="fanatik-zele.html" class="card portal-card">
+        <div class="portal-badge">FZ</div>
+        <h3>Fanatik Zèlé</h3>
+        <p>Sipòtè ki kenbe limyè BSS la vivan.</p>
+        <span class="soon">Louvri paj la</span>
+      </a>
+
+      <a href="pitit-kay.html" class="card portal-card">
+        <div class="portal-badge">PK</div>
+        <h3>Pitit Kay</h3>
+        <p>Espas pou fanmi ak moun espesyal nan estrikti a.</p>
+        <span class="soon">Louvri paj la</span>
+      </a>
+
+      <a href="ti-machann.html" class="card portal-card">
+        <div class="portal-badge">TM</div>
+        <h3>Ti Machann</h3>
+        <p>Enskripsyon, badj, ak lis apwobasyon machann yo.</p>
+        <span class="soon">Louvri paj la</span>
+      </a>
+
+      <a href="store.html" class="card portal-card">
+        <div class="portal-badge">ST</div>
+        <h3>Magazen</h3>
+        <p>Pwodwi ak atik ofisyèl BSS.</p>
+        <span class="soon">Louvri paj la</span>
+      </a>
+
+      <a href="video.html" class="card portal-card">
+        <div class="portal-badge">VID</div>
+        <h3>Videyo</h3>
+        <p>Galri videyo ak medya ofisyèl.</p>
+        <span class="soon">Louvri paj la</span>
+      </a>
+
+      <a href="kontak.html" class="card portal-card">
+        <div class="portal-badge">KON</div>
+        <h3>Kontak</h3>
+        <p>Enfòmasyon pou kontakte BSS dirèkteman.</p>
+        <span class="soon">Louvri paj la</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <h3>BRIYANT SOLÈY SIGNO 1815 • Kontak Ofisyèl</h3>
+
+  <p><strong>ADRES:</strong> 6934 Coral Cove Drive, Orlando, Florida 32818</p>
+  <p><strong>TELEFÒN:</strong> (317) 538-1150 • (516) 216-8494</p>
+
+  <p><strong>EMAIL:</strong>
+    <a href="mailto:briyantsoleysigno1815@gmail.com">
+      briyantsoleysigno1815@gmail.com
+    </a>
+  </p>
+
+  <p><strong>WEBSITE:</strong>
+    <a href="https://www.briyantsoleysigno.com" target="_blank">
+      www.briyantsoleysigno.com
+    </a>
+  </p>
+
+  <p><strong>WHATSAPP:</strong> (317) 538-1150</p>
+
+  <div style="margin-top:20px;">
+    📘 🎵 📸 🐦
+  </div>
+
+  <div class="footer-line"></div>
+
+  <p class="footer-copy">
+    © 2026 BRIYANT SOLÈY SIGNO 1815 — Tout dwa rezève.
+  </p>
+</footer>
+
+
+       
