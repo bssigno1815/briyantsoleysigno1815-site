@@ -64,7 +64,20 @@ header {
 header img {
     width: 140px;
     height: auto;
+/* HEADER – BSS 1815 */
+.main-header {
+  background: linear-gradient(to bottom, #000000, #f4a460);
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.logo-center img {
+  width: 150px;
+  height: auto;
+  display: block;
+}}
 
 nav ul {
     list-style: none;
