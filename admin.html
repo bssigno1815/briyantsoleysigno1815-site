@@ -1,0 +1,33 @@
+<input id="email" placeholder="Email">
+<input id="password" type="password" placeholder="Password">
+
+<button onclick="login()">LOGIN</button>
+
+<script type="module">
+  import { initializeApp } from 
+  "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+  import { getAuth, signInWithEmailAndPassword } from 
+  "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyB24Sbq_ud2qSFtdHwRhiKelokeIjCtDuY",
+    authDomain: "briyant-soley-signo-1815.firebaseapp.com",
+    projectId: "briyant-soley-signo-1815",
+    storageBucket: "briyant-soley-signo-1815.firebasestorage.app",
+    messagingSenderId: "873317957685",
+    appId: "1:873317957685:web:fd8fed6192a1303099717c"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  window.login = function () {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    signInWithEmailAndPassword(auth, email, password)
+      .then(() => window.location.href = "dashboard.html")
+      .catch(() => alert("Login failed"));
+  };
+</script>
